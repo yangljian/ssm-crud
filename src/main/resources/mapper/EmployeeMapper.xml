@@ -16,7 +16,7 @@
         <result column="d_id" jdbcType="INTEGER" property="dId"/>
         <association property="department" javaType="com.atguigu.crud.entities.Department">
             <id property="deptId" javaType="INTEGER" column="dept_id"/>
-            <result column="deptName" jdbcType="VARCHAR" property="dept_name"/>
+            <result property="deptName" jdbcType="VARCHAR" column="dept_name"/>
         </association>
     </resultMap>
     <sql id="Example_Where_Clause">
